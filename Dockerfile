@@ -6,6 +6,7 @@ COPY package*.json ./
 
 # use npm ci for production
 RUN npm install --omit=dev
+RUN npm run build
 # Copy the rest of the application code into the container
 COPY . .
 
