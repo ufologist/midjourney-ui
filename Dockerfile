@@ -5,7 +5,7 @@ WORKDIR /dist
 COPY package*.json ./
 
 # use npm ci for production
-RUN npm install --omit=dev
+RUN npm install
 # Copy the rest of the application code into the container
 COPY . .
 
